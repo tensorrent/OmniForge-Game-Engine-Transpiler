@@ -1,6 +1,6 @@
-# SPROUT `.sprz` Universal Conversion Platform — GitHub Pages Landing
+# OmniForge Game Engine Transpiler — SPROUT `.sprz` GitHub Pages Landing
 
-Static production web distribution for **SPROUT `.sprz` Universal Game & Content Conversion Service** — engineered for instant **GitHub Pages** hosting with zero uncompiled backend/SDK source code inside this public repository.
+Static production web distribution for **OmniForge Game Engine Transpiler (powered by SPROUT Universal `.sprz` Conversion Platform)** — engineered for instant **GitHub Pages** hosting with zero uncompiled backend/SDK source code inside this public repository.
 
 ## Intellectual Property & Architecture Separation
 
@@ -9,7 +9,7 @@ Static production web distribution for **SPROUT `.sprz` Universal Game & Content
 
 ## Host Directly on GitHub Pages
 
-1. Create a new repository on GitHub (e.g., `tensorrent/sprout-sprz-landing`).
+1. Repository: `https://github.com/tensorrent/OmniForge-Game-Engine-Transpiler`
 2. Optionally update the production API base URL before pushing:
    ```sh
    node scripts/set_api_base.mjs https://your-api-domain.example --env production
@@ -18,7 +18,7 @@ Static production web distribution for **SPROUT `.sprz` Universal Game & Content
    ```
 3. Push to GitHub:
    ```sh
-   git remote add origin https://github.com/<your-org>/<your-repo>.git
+   git remote add origin https://github.com/tensorrent/OmniForge-Game-Engine-Transpiler.git
    git push -u origin main
    ```
 4. In GitHub **Settings -> Pages**:
