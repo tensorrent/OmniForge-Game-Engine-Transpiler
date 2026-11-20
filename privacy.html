@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPROUT .sprz — Privacy &amp; Data Handling Notice</title>
+    <style>
+      body { font-family: system-ui, -apple-system, sans-serif; background: #060912; color: #e2e8f0; max-width: 780px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+      a { color: #38bdf8; }
+      code { background: #0f172a; padding: 2px 6px; border-radius: 4px; color: #6ee7b7; }
+      .card { background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 12px; padding: 20px; margin: 18px 0; }
+    </style>
+  </head>
+  <body>
+    <p><a href="./index.html">&larr; Back to SPROUT .sprz Landing</a></p>
+    <h1>Privacy &amp; Data Handling Notice</h1>
+    <div class="card">
+      <h2>1. Browser-Local Zero-Upload Conversion</h2>
+      <p>Files staged in the <strong>Convert Now</strong> workflow on the main page execute entirely inside your local browser runtime using Web Streams and never leave your machine unless you explicitly trigger <code>POST /v1/jobs</code> in the Developer API Playground or submit an onboarding form.</p>
+    </div>
+    <div class="card">
+      <h2>2. Customer CRM &amp; Marketing Opt-In</h2>
+      <p>When you submit your name, email, company, contact details, or classic engine metadata via the onboarding form, those fields are stored in our SQLite CRM service (<code>customers</code> and <code>marketing_leads_events</code>). You can opt out of marketing communications anytime via <code>POST /v1/marketing/unsubscribe</code> or the one-click unsubscribe button in the Customers &amp; Marketing tab.</p>
+    </div>
+    <div class="card">
+      <h2>3. License &amp; Intellectual Property</h2>
+      <p>Governed by the Sovereign Integrity Protocol License (<a href="./LICENSE">SIP License v1.1</a>). &copy; 2026 Bradley Wallace / TensorRent.</p>
+    </div>
+  </body>
+</html>
