@@ -1,6 +1,6 @@
-# OmniForge Game Engine Transpiler — SPROUT `.sprz` GitHub Pages Landing
+# OmniForge Game Engine Transpiler — Universal `.sprz` Platform
 
-Static production web distribution for **OmniForge Game Engine Transpiler (powered by SPROUT Universal `.sprz` Conversion Platform)** — engineered for instant **GitHub Pages** hosting with zero uncompiled backend/SDK source code inside this public repository.
+Static production web distribution for **OmniForge Game Engine Transpiler (by TensorRent)** — engineered for instant **GitHub Pages** hosting with zero uncompiled backend/SDK source code inside this public repository.
 
 ## Intellectual Property & Architecture Separation
 

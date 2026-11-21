@@ -1,4 +1,4 @@
-window.SPROUT_SPRZ_CONFIG = {
+window.OMNIFORGE_CONFIG = window.SPROUT_SPRZ_CONFIG = {
   environment: "staging",
   apiBaseUrl: "http://100.108.193.6:18788",
   stagingApiBaseUrl: "http://100.108.193.6:18788",
