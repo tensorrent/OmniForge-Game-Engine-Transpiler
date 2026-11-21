@@ -11,6 +11,18 @@ assert.ok(indexHtml.includes("./config.js"), "index.html must reference relative
 assert.ok(!/src="\/assets\//.test(indexHtml), "index.html must use relative ./assets/ paths for GitHub Pages subpath safety");
 assert.ok(!/href="\/assets\//.test(indexHtml), "index.html CSS link must use relative ./assets/ path");
 assert.ok(configJs.includes("SPROUT_SPRZ_CONFIG"), "config.js must define window.SPROUT_SPRZ_CONFIG");
+assert.ok(configJs.includes("OMNIFORGE_CONFIG"), "config.js must define window.OMNIFORGE_CONFIG");
+for (const m of configJs.matchAll(/(\w*ApiBaseUrl)\s*:\s*"([^"]*)"/gi)) {
+  assert.ok(m[2] === "" || m[2].startsWith("https://"), `config.js ${m[1]} must be empty or https:// in the committed tree`);
+}
+for (const href of ["./privacy.html", "./LICENSE.txt", "./THIRD_PARTY_NOTICES.md"]) {
+  assert.ok(indexHtml.includes(`href="${href}"`), `index.html must link ${href}`);
+}
+assert.equal(
+  fs.readFileSync(path.join(root, "LICENSE.txt"), "utf8"),
+  fs.readFileSync(path.join(root, "LICENSE"), "utf8"),
+  "LICENSE.txt must be an exact copy of LICENSE",
+);
 
 const assetRefs = [...indexHtml.matchAll(/(?:src|href)="(\.\/assets\/[^"]+)"/g)].map((m) => m[1]);
 assert.ok(assetRefs.length >= 2, "Expected compiled JS and CSS assets in index.html");

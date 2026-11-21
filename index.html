@@ -3,12 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OmniForge Game Engine Transpiler · Universal .sprz Platform</title>
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="description" content="OmniForge Game Engine Transpiler converts game archives and 3D scenes into .sprz packages. OmniForge is a TensorRent project; TensorRent is a research division of KOBA42." />
+    <meta property="og:title" content="OmniForge Game Engine Transpiler · TensorRent" />
+    <meta property="og:description" content="Convert game archives and 3D scenes into .sprz packages. A TensorRent project; TensorRent is a research division of KOBA42." />
+    <meta property="og:type" content="website" />
+    <title>OmniForge Game Engine Transpiler · TensorRent at KOBA42</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <script type="module" crossorigin src="./assets/landing-DkebQbjS.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/landing-gWM17-ho.css">
+    <style>
+      /* Legal links. The app draws a full-screen layer (z-index 2200), so the links sit above it,
+         below the app's own dialogs (z-index 12000). */
+      .of-legal { position: fixed; left: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 2300; max-width: calc(100vw - 96px); padding: 6px 12px; border-radius: 999px; background: rgba(6, 9, 18, 0.88); border: 1px solid rgba(148, 163, 184, 0.25); font: 12px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #94a3b8; }
+      .of-legal a { color: #cbd5e1; text-underline-offset: 2px; }
+      .of-legal a:hover { color: #ffffff; }
+      .of-legal a:focus-visible { outline: 2px solid #38bdf8; outline-offset: 2px; }
+      .sprz-portal-root { padding-bottom: 48px; }
+    </style>
   </head>
   <body style="margin:0;background:#060912;color:#e2e8f0;">
     <div id="root"></div>
+    <footer class="of-legal">
+      <nav aria-label="Legal and contact">
+        <a href="./privacy.html">Privacy</a> · <a href="./LICENSE.txt">Licence</a> · <a href="./THIRD_PARTY_NOTICES.md">Third-party notices</a> · <a href="mailto:info@koba42.com">Contact</a>
+      </nav>
+    </footer>
     <script src="./config.js"></script>
   </body>
 </html>

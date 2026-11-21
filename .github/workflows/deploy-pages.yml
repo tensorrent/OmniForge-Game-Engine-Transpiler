@@ -1,4 +1,4 @@
-name: Deploy SPROUT .sprz Landing to GitHub Pages
+name: Deploy OmniForge Pages
 
 on:
   push:

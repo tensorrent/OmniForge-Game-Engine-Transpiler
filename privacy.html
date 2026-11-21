@@ -3,28 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OmniForge .sprz — Privacy &amp; Data Handling Notice</title>
+    <meta name="color-scheme" content="dark light" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="description" content="How the OmniForge site handles your data: what is collected, why, who receives it, how long it is kept and your rights." />
+    <title>OmniForge Privacy Notice</title>
     <style>
-      body { font-family: system-ui, -apple-system, sans-serif; background: #060912; color: #e2e8f0; max-width: 780px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-      a { color: #38bdf8; }
-      code { background: #0f172a; padding: 2px 6px; border-radius: 4px; color: #6ee7b7; }
-      .card { background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(148, 163, 184, 0.2); border-radius: 12px; padding: 20px; margin: 18px 0; }
+      :root { --bg: #050507; --panel: #0b0f18; --text: #ffffff; --muted: rgba(255,255,255,.72); --hairline: rgba(255,255,255,.14); --link: #2997ff; --code-bg: rgba(255,255,255,.07); --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Inter, sans-serif; color-scheme: dark; }
+      @media (prefers-color-scheme: light) { :root { --bg: #f5f5f7; --panel: #ffffff; --text: #1d1d1f; --muted: rgba(29,29,31,.72); --hairline: rgba(0,0,0,.12); --link: #0066cc; --code-bg: rgba(0,0,0,.05); color-scheme: light; } }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 var(--font); overflow-wrap: break-word; }
+      a { color: var(--link); text-underline-offset: 2px; }
+      a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+      header, main, footer > div { max-width: 780px; margin: 0 auto; padding: 0 16px; }
+      header { padding-top: 16px; padding-bottom: 16px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; }
+      .wordmark { font-weight: 750; font-size: 1.2rem; letter-spacing: .04em; color: var(--text); text-decoration: none; }
+      .wordmark .k42 { color: var(--link); }
+      .product { color: var(--text); text-decoration: none; font-weight: 650; border-left: 1px solid var(--hairline); padding-left: 12px; }
+      h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.1; font-weight: 650; letter-spacing: -.02em; }
+      h2 { font-size: 1.15rem; font-weight: 650; margin: 0 0 8px; }
+      code { background: var(--code-bg); padding: 1px 6px; border-radius: 6px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .9em; }
+      .card { background: var(--panel); border: 1px solid var(--hairline); border-radius: 24px; padding: 24px; margin: 16px 0; }
+      .card p, .card ul { margin: 0 0 10px; }
+      .card > :last-child { margin-bottom: 0; }
+      .card ul { padding-left: 20px; }
+      .card li { margin: 4px 0; }
+      .updated { color: var(--muted); }
+      footer { border-top: 1px solid var(--hairline); margin-top: 48px; color: var(--muted); font-size: .9rem; }
+      footer > div { padding-top: 24px; padding-bottom: 48px; }
+      footer p { margin: 8px 0; }
+      .foot-links a { color: var(--muted); }
+      .foot-links a:hover { color: var(--text); }
+      @media (max-width: 480px) { body { font-size: 16px; } .card { padding: 18px; } }
     </style>
   </head>
   <body>
-    <p><a href="./index.html">&larr; Back to OmniForge .sprz Landing</a></p>
-    <h1>Privacy &amp; Data Handling Notice</h1>
-    <div class="card">
-      <h2>1. Browser-Local Zero-Upload Conversion</h2>
-      <p>Files staged in the <strong>Convert Now</strong> workflow on the main page execute entirely inside your local browser runtime using Web Streams and never leave your machine unless you explicitly trigger <code>POST /v1/jobs</code> in the Developer API Playground or submit an onboarding form.</p>
-    </div>
-    <div class="card">
-      <h2>2. Customer CRM &amp; Marketing Opt-In</h2>
-      <p>When you submit your name, email, company, contact details, or classic engine metadata via the onboarding form, those fields are stored in our SQLite CRM service (<code>customers</code> and <code>marketing_leads_events</code>). You can opt out of marketing communications anytime via <code>POST /v1/marketing/unsubscribe</code> or the one-click unsubscribe button in the Customers &amp; Marketing tab.</p>
-    </div>
-    <div class="card">
-      <h2>3. License &amp; Intellectual Property</h2>
-      <p>Governed by the Sovereign Integrity Protocol License (<a href="./LICENSE">SIP License v1.1</a>). &copy; 2026 Bradley Wallace / TensorRent.</p>
-    </div>
+    <header>
+      <a class="wordmark" href="https://koba42.com">KOBA<span class="k42">42</span></a>
+      <a class="product" href="./index.html">OmniForge</a>
+    </header>
+    <main>
+      <p><a href="./index.html">&larr; Back to OmniForge</a></p>
+      <h1>Privacy notice</h1>
+      <p class="updated">Last updated 20 November 2026.</p>
+
+      <div class="card">
+        <h2>1. Who is responsible</h2>
+        <p>OmniForge is a TensorRent project. TensorRent is a research division of KOBA42. KOBA42 is responsible for the personal data described here.</p>
+        <p>Contact for any privacy question or request: <a href="mailto:info@koba42.com">info@koba42.com</a>.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. The site as published</h2>
+        <p>This site is a static page hosted on GitHub Pages. As published, no backend server is configured (<code>config.js</code> sets every backend address to empty), so conversions run in your browser and the forms on the page do not send your entries to us.</p>
+        <p>GitHub hosts the site and records technical data about each request, such as your IP address, for security and operation. That is covered by the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. We do not use cookies, analytics or advertising trackers.</p>
+      </div>
+
+      <div class="card">
+        <h2>3. What is sent when a backend is configured</h2>
+        <p>A deployment can be pointed at a conversion backend run by or for KOBA42. When one is set, the page sends the following to it:</p>
+        <ul>
+          <li><strong>Convert &amp; Verify Integrity:</strong> when you click it and the files you staged total 8&nbsp;MiB or less, the page uploads those files, the game name and conversion settings, the plan tier, the contact email addresses you entered, and the licence key and account email held in your browser. Files over 8&nbsp;MiB in total stay in your browser. There is no separate upload switch, so do not stage files you do not want uploaded.</li>
+          <li><strong>Download-link emails:</strong> the email addresses you list receive messages with download links. Only list people who have agreed to receive them.</li>
+          <li><strong>Onboarding and contact form:</strong> full name, email, company, role, phone or Signal, game engine, plan of interest, classic title, studio tier, notes, your marketing choice, and the campaign tags the page adds.</li>
+          <li><strong>Pro licence form:</strong> name, email, plan and game engine. No payment is taken through this page; do not enter card details.</li>
+          <li><strong>Google account email field:</strong> the email address you type, to link it to your licence. This is not a Google sign-in, and nothing is sent to Google.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. Why we use it, and the legal basis</h2>
+        <ul>
+          <li>To run the conversion you asked for and send the links you asked for (performing your request).</li>
+          <li>To reply to your enquiry and set up a licence (steps you asked us to take before a contract).</li>
+          <li>To send release news, only if you tick the marketing box. The box starts unticked (your consent, which you can withdraw at any time).</li>
+          <li>Hosting logs, for security and operation (legitimate interest; handled by GitHub).</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>5. Who receives it</h2>
+        <ul>
+          <li>GitHub, Inc., which hosts the site.</li>
+          <li>The backend server, when one is configured, run by or for KOBA42.</li>
+        </ul>
+        <p>We do not sell personal data.</p>
+      </div>
+
+      <div class="card">
+        <h2>6. How long it is kept</h2>
+        <ul>
+          <li>Uploaded files and converted packages: 24 hours by default; the page shows the expiry for each job.</li>
+          <li>Enquiry, licence and marketing records: until you ask us to delete them, and no longer than two years after our last contact with you.</li>
+          <li>Hosting logs: as set by GitHub.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>7. Stored in your browser</h2>
+        <p>The page keeps your plan, licence key, account email and activation date in your browser's local storage (<code>omniforge_pro_licence_v1</code> and <code>sprout_sprz_pro_licence_v1</code>), so the licence survives a reload. Staff sign-in keeps a session token in session storage, cleared when the tab closes. Clearing this site's data in your browser removes them.</p>
+      </div>
+
+      <div class="card">
+        <h2>8. Your rights</h2>
+        <p>You can ask to see, correct or delete your data, to restrict or object to its use, and to receive a copy. You can withdraw marketing consent at any time: email <a href="mailto:info@koba42.com">info@koba42.com</a> to unsubscribe. You can also complain to your local data protection authority.</p>
+      </div>
+
+      <div class="card">
+        <h2>9. Licence</h2>
+        <p>The site is governed by the Sovereign Integrity Protocol License (<a href="./LICENSE.txt">SIP License v1.1</a>). Bundled third-party code is listed in the <a href="./THIRD_PARTY_NOTICES.md">third-party notices</a>.</p>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>© 2026 Bradley Wallace / TensorRent — SIP License v1.1. Source-available; see the <a href="./LICENSE.txt">licence text</a>.</p>
+        <p>OmniForge is a TensorRent project. TensorRent is a research division of KOBA42.</p>
+        <p class="foot-links"><a href="./index.html">OmniForge</a> · <a href="./privacy.html">Privacy</a> · <a href="./LICENSE.txt">Licence</a> · <a href="./THIRD_PARTY_NOTICES.md">Third-party notices</a> · <a href="mailto:info@koba42.com">info@koba42.com</a></p>
+      </div>
+    </footer>
   </body>
 </html>

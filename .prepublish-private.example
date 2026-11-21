@@ -1,0 +1,7 @@
+# Copy this file to .prepublish-private (git ignores that name) and list, one per line, literals that
+# must never appear in the published tree: private host addresses, machine and host names, personal
+# email addresses, private project or drive names. Blank lines and lines starting with # are skipped.
+# Matching is case-insensitive. scripts/prepublish_scan.mjs reports a hit by file, line and entry
+# number only, never by value. Example entries (placeholders, not real values):
+#   my-private-host
+#   name@private-mailbox.example
